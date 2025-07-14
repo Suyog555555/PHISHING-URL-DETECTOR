@@ -1,6 +1,6 @@
 Phishing URL Detector
 A machine learning-powered web application that detects phishing URLs using advanced feature extraction and Random Forest classification.
-
+---
 🚀 Features
 Real-time URL Analysis: Instantly classify URLs as phishing or legitimate
 Advanced Feature Extraction: Analyzes 25+ URL characteristics including:
@@ -16,6 +16,7 @@ Web Interface: Clean, responsive Flask web application
 Confidence Scoring: Provides prediction confidence levels
 Risk Assessment: Categorizes URLs by risk level (HIGH/MEDIUM/LOW/SAFE)
 Deployment Ready: Configured for easy deployment on Render
+---
 🏗️ Project Structure
 phishing-url-detector/
 ├── app.py                 # Main Flask application
@@ -30,6 +31,7 @@ phishing-url-detector/
 ├── data/
 │   └── sample_urls.csv   # Sample training data
 └── README.md            # This file
+---
 🛠️ Installation & Setup
 Local Development
 Clone the repository:
@@ -61,6 +63,7 @@ Build Command: pip install -r requirements.txt && python train_model.py
 Start Command: python app.py
 Environment: Python 3
 Deploy: Click "Create Web Service"
+---
 🧠 Machine Learning Model
 Features Extracted (25 features):
 Basic URL Features:
@@ -91,6 +94,7 @@ Algorithm: Random Forest Classifier
 Features: 25 engineered features
 Accuracy: ~95% on test data
 Cross-validation: Stratified train-test split
+---
 🔧 API Endpoints
 POST /predict
 Analyze a single URL
@@ -127,7 +131,7 @@ json
 }
 GET /health
 Health check endpoint
-
+---
 🎯 Usage Examples
 Web Interface
 Enter a URL in the input field
@@ -138,12 +142,14 @@ Sample URLs for Testing:
 Legitimate: https://www.google.com
 Phishing: http://paypal-security.tk/login
 Suspicious: http://bit.ly/suspicious-link
+---
 🔍 How It Works
 URL Input: User enters a URL to analyze
 Feature Extraction: System extracts 25+ features from the URL
 ML Prediction: Random Forest model classifies the URL
 Risk Assessment: Confidence score determines risk level
 Result Display: User sees prediction with detailed analysis
+---
 📊 Model Training
 The model is trained on a dataset of phishing and legitimate URLs with features including:
 
@@ -155,20 +161,23 @@ To retrain the model:
 
 bash
 python train_model.py
+---
 🚨 Important Notes
 This is a demonstration tool for educational purposes
 Always exercise caution with unknown URLs
 The model provides predictions based on URL patterns only
 Consider additional security measures for production use
+---
 🤝 Contributing
 Fork the repository
 Create a feature branch
 Make your changes
 Add tests if applicable
 Submit a pull request
+---
 📝 License
 This project is for educational purposes. Please check individual library licenses for commercial use.
-
+---
 🎥 Demo Video
 After deployment, create a demo video showing:
 
@@ -178,7 +187,7 @@ Web interface functionality
 Different URL testing scenarios
 Deployment on Render
 Upload to LinkedIn and submit the URL as requested.
-
+---
 📞 Support
 For questions or issues:
 
